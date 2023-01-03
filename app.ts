@@ -1,8 +1,8 @@
 let age: number;
 age = 50;
 
-let name: string;
-name = "Max";
+let nameMan: string;
+nameMan = "Max";
 
 let toggle: boolean;
 toggle = true;
@@ -13,7 +13,7 @@ empty = null;
 let notInitialize: undefined;
 notInitialize = undefined;
 
-let callback = (a: number) => number;
+let callback: (a: number) => number;
 callback = (a) => {
   return 100 + a;
 };
@@ -76,8 +76,8 @@ type pageType = {
   accounts: string[];
   status: "open" | "close";
   details?: {
-    createAt: Date;
-    updateAt: Date;
+    createAt: string;
+    updateAt: string;
   };
 };
 const page1: pageType = {
